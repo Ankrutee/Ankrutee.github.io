@@ -1,2 +1,2 @@
-This is an assignment made for the Software Engineering course. 
-The template is a premade template by Nisar Hussain.
+Software Engineering Assignment by IMT2020034.
+The template used is given by Nisar Hassan.
