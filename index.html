@@ -10,8 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="Portfolio.js"> </script>
   <link rel="stylesheet" type="text/css" href="Portfolio.css">
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
+    
   <!-- Put your site title here -->
   <title>
     My Portfolio!
@@ -23,6 +22,14 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 
+<!--<style>
+  p{
+    background-image: url('Bg.jpg');
+    background-size: 100% 100%;
+   }
+  </style>
+-->
+
 <body>
 
   <!-- ***** Header ***** -->
@@ -31,7 +38,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -50,85 +57,94 @@
         <!-- Put a small paragraph about yourself -->
         <p>I am a Junior, currently pursuing Integrated M.Tech focused in CS from
            IIIT, Bangalore. I love to develop projects and work on ideas that can make people’s lives better. </p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <a href="#contact" class="btn btn--pink">Get in touch<class="btn"></a>
       </div>
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <!-- ***** Projects ***** -->
 
-    <section class="work" id="work">
+    <section class="Projects" id="Projects">
       <div class="row">
-        <h2>My Profile</h2>
-        <div class="work__boxes">
+        <h2>Projects</h2>
+        <div class="Projects__boxes">
+          <!-- Each div with the projects__boxes class is a project. -->
 
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
+          <div class="Projects__box">
+            <div class="Projects__text">
               <!--<h3>All about me!</h3> -->
               <p>
                 Summer Research Intern at IIITB (July'22)
               </p>
-              <ul class="work__list">
+              <ul class="Projects__list">
                 <li>Secure Dominating Set </li>
                 <li>DAA</li>
                 <li>Graph Theory</li>
                 <li>Optimal Path </li>
               </ul>
-
-              
+            
+              </div>
             </div>
-            <div class="work__image-box">
+            <div class="Projects__image-box">
               <img src="SDS" class="work__image" alt="Project 1" />
             </div>
           </div>
-
-          <div class="work__box">
-            <div class="work__text">
+                          
+            
+          <div class="Projects__box">
+            <div class="Projects__text">
               <h3>  Theatre Management System </h3>
               <p>
-                Pioneered a system that can be leveraged by several users including Admin, Manager and a regular employee of a theatre. This helps in efficient transaction and secure storage of
+                Pioneered a system that can be leveraged by several users including
+                Admin, Manager and a regular employee of a theatre. This helps in 
+                efficient transaction and secure storage of
                 data
               </p>
-              <ul class="work__list">
+              <ul class="Projects__list">
                 <li>DBMS</li>
                 <li>MySQL.js</li>
              </ul>
 
+             <div class="Projects__links">
+              <a href="https://github.com/Ankrutee/Theatre-management-system" target="_blank" class="link__text">
+                Visit Site <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/Ankrutee/Theatre-management-system" title="View Source Code" target="_blank">
+                <img src="github.png" class="work__code" alt="GitHub">
+              </a>
+            </div>
               </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            <div class="Projects__image-box">
+              <img src="TMS.png" class="Projects__image" alt="Project 1" />
             </div>
           </div>
 
-          <div class="work__box">
-            <div class="work__text">
+          <div class="Projects__box">
+            <div class="Projects__text">
               <h3>Object detection using OpenCV</h3>
               <p>
-                Identifies the object placed in front of the
-webcam and classifies its type. Have used basics of Neural Network concepts to read the image. Implemented using Cv2
+                Identifies the object placed in front of the webcam and classifies its type. Have used basics of Neural Network concepts to read the image. Implemented using Cv2
 library
               </p>
-              <ul class="work__list">
+              <ul class="Projects__list">
                 <li>OpenCV</li>
                 <li>Python</li>
                 <li>Computer Vision</li>
                 </ul>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+                <div class="Projects__links">
+                  <a href="https://github.com/Ankrutee/ObjectDetection_OpenCV" target="_blank" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/Ankrutee/ObjectDetection_OpenCV" title="View Source Code" target="_blank">
+                    <img src="github.png" class="work__code" alt="GitHub">
+                  </a>
+                </div>
+               </div>
+            <div class="Projects__image-box">
+              <img src="OD.jpg" class="Projects__image" alt="Project 3" />
             </div>
           </div>
         </div>
@@ -151,12 +167,12 @@ library
               and my favourite genre is Mystery/Suspense. I love spending my time with family and friends.  
             </p>
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <a href="https://drive.google.com/file/d/18-iUEExkUhORpL92KsLEeJqAZLA85PLv/view?usp=sharing" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="49DDCA5E-1BB3-4077-B013-4EC40EFBCB64.jpeg" alt="" />
           </div>
         </div>
       </div>
@@ -189,34 +205,22 @@ library
       <ul class="footer__social-links">
       <li class="footer__social-link-item">
           <a href="https://github.com/Ankrutee" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+            <img src="github.png" class="footer__social-image" alt="Github">
           </a>
         </li>
         
         <li class="footer__social-link-item">
           <a href=https://www.linkedin.com/in/ankrutee-arora-1111aa20/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="linkedin.png" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
+      
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="Arrow.png" alt="Back to Top" class="back-to-top__image"/>
   </a>
-  <script src="./index.js"></script>
+  <script src="Portfolio.js"></script>
 </body>
 
 </html>
